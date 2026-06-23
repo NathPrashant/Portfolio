@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prashant Nath — Portfolio</title>
+  <meta name="description" content="CS student building full-stack apps and exploring ML."/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">prashant<em>.nath</em></a>
+  <div class="nav-links" id="nav-links">
+    <a class="nav-btn" href="index.html">Home</a>
+    <a class="nav-btn" href="projects.html">Projects</a>
+    <a class="nav-btn" href="about.html">About</a>
+    <a class="nav-btn" href="contact.html">Contact</a>
+  </div>
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<div class="home-hero">
+  <div class="home-hero-grid">
+    <div>
+      <h1 class="hero-name">Hi, I'm<br><span>Prashant Nath</span></h1>
+      <p class="hero-role">Computer Science Student · Full-Stack Developer · Machine Learning Enthusiast · AI Explorer</p>
+      <p class="hero-desc">Driven by curiosity and a passion for problem-solving, I build technology projects that blend software engineering, machine learning, and meaningful user experiences.</p>
+      <div class="btn-row">
+        <a class="btn-dark" href="projects.html">Personal Projects →</a>
+        <a class="btn-light" href="about.html">About me</a>
+      </div>
+    </div>
+    <div>
+      <div class="terminal-card">
+        <div class="term-bar">
+          <div class="term-dot" style="background:#ff5f57"></div>
+          <div class="term-dot" style="background:#ffbd2e"></div>
+          <div class="term-dot" style="background:#28c940"></div>
+          <span class="term-title">~/NathPrashant</span>
+        </div>
+        <div class="term-body">
+          <div><span class="t-g">❯</span> <span class="t-w">cat info.json</span></div>
+          <div class="t-dim">{</div>
+          <div class="t-dim">&nbsp;&nbsp;<span class="t-b">"name"</span>: <span class="t-y">"Prashant Nath"</span>,</div>
+          <div class="t-dim">&nbsp;&nbsp;<span class="t-b">"year"</span>: <span class="t-y">"CS Student"</span>,</div>
+          <div class="t-dim">&nbsp;&nbsp;<span class="t-b">"focus"</span>: <span class="t-y">"Full-Stack + ML + AI"</span>,</div>
+          <div class="t-dim">&nbsp;&nbsp;<span class="t-b">"status"</span>: <span class="t-g">"open to work ✓"</span></div>
+          <div class="t-dim">}</div>
+          <div style="margin-top:4px"><span class="t-g">❯</span> <span class="cursor"></span></div>
+        </div>
+      </div>
+      <div class="stats-row">
+        <div class="stat-box"><div class="stat-n">3</div><div class="stat-l">projects</div></div>
+        <div class="stat-box"><div class="stat-n">8</div><div class="stat-l">followers</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TECH STRIP -->
+<div class="tech-strip">
+  <span class="tech-label">Stack:</span>
+  <span class="tech-pill">Python</span>
+  <span class="tech-pill">Dart</span>
+  <span class="tech-pill">HTML</span>
+  <span class="tech-pill">CSS</span>
+  <span class="tech-pill">JavaScript</span>
+  <span class="tech-pill">SQL</span>
+
+  <span class="tech-pill">Flutter</span>
+  <span class="tech-pill">Django</span>
+
+  <span class="tech-pill">Pandas</span>
+  <span class="tech-pill">Scikit-learn</span>
+  <span class="tech-pill">Jupyter</span>
+
+  <span class="tech-pill">Git</span>
+  <span class="tech-pill">SQLite</span>
+</div>
+
+<!-- FEATURED PROJECTS -->
+<div class="featured-section">
+  <div class="sec-header">
+    <div class="sec-title">Featured projects</div>
+    <a class="sec-link" href="projects.html">View all →</a>
+  </div>
+  <div class="card-grid-3">
+
+    <a class="proj-card" href="projects/auremind-web.html">
+      <div class="proj-top c1"></div>
+      <div class="proj-body">
+        <div class="proj-cat">Web App · 2025</div>
+        <div class="proj-title">AureMind Web</div>
+        <div class="proj-desc">AI-assisted personal manager web app built with Django — combining note-taking, task tracking, and productivity tools in a clean, responsive interface.</div>
+        <div class="proj-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Django</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="proj-card" href="projects/auremind-android.html">
+      <div class="proj-top c2"></div>
+      <div class="proj-body">
+        <div class="proj-cat">Mobile App · 2025</div>
+        <div class="proj-title">AureMind Android</div>
+        <div class="proj-desc">Secure, offline-first notes and task management app built with Flutter — encrypted local storage, calendar tasks, reminders, and PDF export with no account required.</div>
+        <div class="proj-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Dart</span>
+          <span class="tag">SQLite</span>
+        </div>
+      </div>
+    </a>
+
+    <a class="proj-card" href="projects/credit-card-fraud.html">
+      <div class="proj-top c3"></div>
+      <div class="proj-body">
+        <div class="proj-cat">Machine Learning · 2024</div>
+        <div class="proj-title">Credit Card Fraud Detection</div>
+        <div class="proj-desc">Fraudulent transaction detection using a Random Forest classifier with feature engineering on geolocation, time, and merchant data.</div>
+        <div class="proj-tags">
+          <span class="tag">Python</span>
+          <span class="tag">Scikit-learn</span>
+          <span class="tag">Pandas</span>
+          <span class="tag">Jupyter</span>
+        </div>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer>built by <span>Prashant Nath</span> · Portfolio · 2026</footer>
+<script src="script.js"></script>
+</body>
+</html>

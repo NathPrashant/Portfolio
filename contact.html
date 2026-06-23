@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact — Prashant Nath</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="index.html">prashant<em>.nath</em></a>
+  <div class="nav-links" id="nav-links">
+    <a class="nav-btn" href="index.html">Home</a>
+    <a class="nav-btn" href="projects.html">Projects</a>
+    <a class="nav-btn" href="about.html">About</a>
+    <a class="nav-btn" href="contact.html">Contact</a>
+  </div>
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="contact-layout">
+  <h2>Let's work together.</h2>
+  <p>Open to internships, project collaborations, or just a chat about tech. Reach out through any channel below.</p>
+
+  <div class="contact-grid">
+    <div>
+      <div class="contact-col-title">Find me online</div>
+
+      <a class="soc-card" href="https://github.com/NathPrashant" target="_blank">
+        <div class="soc-icon gh">⌥</div>
+        <div class="soc-info"><h4>GitHub</h4><p>@NathPrashant</p></div>
+        <span class="soc-arrow">↗</span>
+      </a>
+      <a class="soc-card" href="mailto:prashantnath940@gmail.com">
+        <div class="soc-icon em">✉</div>
+        <div class="soc-info"><h4>prashantnath940@gmail.com</h4><p>Get in touch</p></div>
+        <span class="soc-arrow">↗</span>
+      </a>
+      <a class="soc-card" href="https://www.linkedin.com/in/NathPrashant" target="_blank">
+        <div class="soc-icon li">in</div>
+        <div class="soc-info"><h4>LinkedIn</h4><p>Prashant Nath</p></div>
+        <span class="soc-arrow">↗</span>
+      </a>
+      <a>
+        <div class="soc-card" onclick="copyDiscord(this)">
+        <div class="soc-icon dc">#</div>
+        <div class="soc-info"><h4>Discord</h4><p class="discord-username">nathprashant</p></div>
+        </div>
+      </a>
+    </div>  
+  </div>
+</div>
+
+<footer>built by <span>Prashant Nath</span> · Portfolio · 2026</footer>
+<script src="script.js"></script>
+</body>
+</html>

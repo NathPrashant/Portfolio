@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AureMind Android — Prashant Nath</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">prashant<em>.nath</em></a>
+  <div class="nav-links" id="nav-links">
+    <a class="nav-btn" href="../index.html">Home</a>
+    <a class="nav-btn" href="../projects.html">Projects</a>
+    <a class="nav-btn" href="../about.html">About</a>
+    <a class="nav-btn" href="../contact.html">Contact</a>
+  </div>
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="project-detail">
+
+  <div class="breadcrumb">
+    <a href="../projects.html">Projects</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>AureMind Android</span>
+  </div>
+
+  <div class="project-hero c2"></div>
+
+  <div class="project-meta-row">
+    <span class="project-cat-badge">Mobile App</span>
+    <span class="project-year">2025</span>
+  </div>
+  <h1>AureMind Android</h1>
+
+  <div class="project-layout">
+    <div class="project-body">
+
+      <h3>Overview</h3>
+      <p>AureMind Android is a secure, offline-first notes and task management mobile application built with Flutter. Designed for users who value privacy and reliability, it provides a fully functional productivity suite without requiring an account or internet connection.</p>
+
+      <h3>Motivation</h3>
+      <p>Many note-taking and task apps require cloud accounts, raising privacy concerns and making them inaccessible without internet. AureMind Android solves this by keeping all data local and encrypted, giving users complete control over their information.</p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li>Encrypted local storage — all data stays on-device with no cloud dependency</li>
+        <li>Offline-first architecture — works fully without internet access</li>
+        <li>Calendar-based task management with due dates and priorities</li>
+        <li>Reminder and notification system for tasks and notes</li>
+        <li>PDF export for notes and task summaries</li>
+        <li>No account or sign-up required — zero friction to start</li>
+        <li>Clean, intuitive Flutter UI with smooth animations</li>
+        <li>SQLite database for fast local queries</li>
+      </ul>
+
+      <h3>Technical Highlights</h3>
+      <p>The app is built with Flutter and Dart, targeting Android devices. All notes and tasks are stored in an encrypted SQLite database using local encryption libraries. The calendar view and reminder system are built on top of Flutter's native scheduling APIs, ensuring reliability across Android versions.</p>
+      <p>PDF export was implemented using a Flutter PDF generation library, allowing users to create shareable documents from their notes and task lists without any server-side processing.</p>
+
+      
+    </div>
+
+    <div class="project-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Tech Stack</div>
+        <div class="sidebar-tags">
+          <span class="tag">Flutter</span>
+          <span class="tag">Dart</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">Android</span>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Links</div>
+        <div class="sidebar-links">
+          <a class="sidebar-link" href="https://github.com/NathPrashant/AureMind_Android" target="_blank">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Details</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div>
+            <div style="font-size:11px;font-family:'Fira Code',monospace;color:var(--text-dimmer);margin-bottom:3px">Status</div>
+            <div style="font-size:13px;font-weight:500;color:#888">⚪ Archived</div>
+          </div>
+          <div>
+            <div style="font-size:11px;font-family:'Fira Code',monospace;color:var(--text-dimmer);margin-bottom:3px">Type</div>
+            <div style="font-size:13px;font-weight:500">Academic / Team Project</div>
+          </div>
+          <div>
+            <div style="font-size:11px;font-family:'Fira Code',monospace;color:var(--text-dimmer);margin-bottom:3px">Year</div>
+            <div style="font-size:13px;font-weight:500">2025</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-nav">
+    <a class="project-nav-btn" href="../projects/auremind-web.html">
+      <span class="project-nav-label">← Previous project</span>
+      <span class="project-nav-title">AureMind Web</span>
+    </a>
+    <a class="project-nav-btn right" href="../projects/credit-card-fraud.html">
+      <span class="project-nav-label">Next project →</span>
+      <span class="project-nav-title">Credit Card Fraud Detection</span>
+    </a>
+  </div>
+
+</div>
+
+<footer>built by <span>Prashant Nath</span> · Portfolio · 2026</footer>
+<script src="../script.js"></script>
+</body>
+</html>
