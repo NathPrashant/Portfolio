@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packet Sentry — Prashant Nath</title>
+  <link rel="stylesheet" href="../style.css"/>
+</head>
+<body>
+
+<nav>
+  <a class="nav-brand" href="../index.html">prashant<em>.nath</em></a>
+  <div class="nav-links" id="nav-links">
+    <a class="nav-btn" href="../index.html">Home</a>
+    <a class="nav-btn" href="../projects.html">Projects</a>
+    <a class="nav-btn" href="../about.html">About</a>
+    <a class="nav-btn" href="../contact.html">Contact</a>
+  </div>
+  <button id="theme-toggle" class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  <button class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<div class="project-detail">
+
+  <div class="breadcrumb">
+    <a href="../projects.html">Projects</a>
+    <span class="breadcrumb-sep">/</span>
+    <span>Packet Sentry</span>
+  </div>
+
+  <div class="project-hero c4"></div>
+
+  <div class="project-meta-row">
+    <span class="project-cat-badge">Desktop App</span>
+    <span class="project-year">2026</span>
+  </div>
+  <h1>Packet Sentry</h1>
+
+  <div class="project-layout">
+    <div class="project-body">
+
+      <h3>Overview</h3>
+      <p>Packet Sentry provides a live view of your machine's network activity through a cross-platform desktop interface. The backend is written in Rust and uses <code>pcap</code> for packet capture, <code>etherparse</code> for protocol parsing, and <code>sysinfo</code> for process enumeration. The frontend is a React/TypeScript application served inside a Tauri webview.</p>
+
+      <h3>Key Features</h3>
+      <ul>
+        <li><strong>Network Graph:</strong> Captures raw packets on a selected network interface and plots upload/download throughput in real time.</li>
+        <li><strong>Process Tracking:</strong> Lists all active system processes with their per-process bandwidth usage and exposes a kill action for any process directly from the UI.</li>
+        <li><strong>Server Latency:</strong> Continuously pings Cloudflare DNS (1.1.1.1) and Google DNS (8.8.8.8) and renders rolling latency charts to give a quick baseline for network health.</li>
+        <li><strong>Cross-Platform:</strong> Complete with pre-built installers for Windows (.exe, .msi) and Linux (.deb, .rpm).</li>
+      </ul>
+
+      <h3>Architecture</h3>
+      <p>The application relies on Tauri 2 to bridge a high-performance Rust backend with a modern web frontend. By dropping down to Rust for system-level networking, the application can securely capture raw sockets (leveraging Npcap on Windows and elevated capabilities on Linux) while maintaining a lightweight GUI footprint through Vite and React 19.</p>
+
+    </div>
+
+    <div class="project-sidebar">
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Tech Stack</div>
+        <div class="sidebar-tags">
+          <span class="tag">Rust</span>
+          <span class="tag">Tauri 2</span>
+          <span class="tag">React 19</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Recharts</span>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Links</div>
+        <div class="sidebar-links">
+          <a class="sidebar-link" href="https://github.com/NathPrashant/Packet_Sentry" target="_blank">
+            View on GitHub
+          </a>
+        </div>
+      </div>
+
+      <div class="sidebar-card">
+        <div class="sidebar-card-title">Details</div>
+        <div style="display:flex;flex-direction:column;gap:10px">
+          <div>
+            <div style="font-size:11px;font-family:'Fira Code',monospace;color:var(--text-dimmer);margin-bottom:3px">Status</div>
+            <div style="font-size:13px;font-weight:500;color:#28c940">🟢 Active</div>
+          </div>
+          <div>
+            <div style="font-size:11px;font-family:'Fira Code',monospace;color:var(--text-dimmer);margin-bottom:3px">Type</div>
+            <div style="font-size:13px;font-weight:500">Personal Project</div>
+          </div>
+          <div>
+            <div style="font-size:11px;font-family:'Fira Code',monospace;color:var(--text-dimmer);margin-bottom:3px">Year</div>
+            <div style="font-size:13px;font-weight:500">2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-nav">
+    <a class="project-nav-btn left" href="../projects/auremind-web.html">
+      <span class="project-nav-label">← Previous project</span>
+      <span class="project-nav-title">AureMind Web</span>
+    </a>
+    <div></div>
+  </div>
+
+</div>
+
+<footer>built by <span>Prashant Nath</span> · Portfolio · 2026</footer>
+<script src="../script.js"></script>
+</body>
+</html>
